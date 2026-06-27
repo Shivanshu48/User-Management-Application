@@ -2,6 +2,12 @@
 
 A Vite + React demo application for viewing, creating, editing, and deleting user profiles.
 
+## Live demo
+
+Open the deployed app here:
+
+- https://synergylabs-user.netlify.app/
+
 ## Project setup
 
 Install dependencies:
