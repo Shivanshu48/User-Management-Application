@@ -8,6 +8,10 @@ Open the deployed app here:
 
 - https://synergylabs-user.netlify.app/
 
+## Deployment
+
+This project is deployed on Netlify.
+
 ## Project setup
 
 Install dependencies:
