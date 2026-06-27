@@ -1,0 +1,135 @@
+.user-details-page {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.details-header {
+  align-items: flex-start;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 22px;
+  box-shadow: var(--shadow-subtle);
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  padding: 26px;
+}
+
+.details-header h1 {
+  color: var(--color-text);
+  font-size: clamp(1.75rem, 2vw, 2.125rem);
+  line-height: 1.2;
+  margin: 0;
+}
+
+.details-header p {
+  color: var(--color-muted);
+  font-weight: 700;
+  margin: 8px 0 0;
+}
+
+.details-header__link {
+  background: var(--color-accent-soft);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-control);
+  color: var(--color-text);
+  font-weight: 700;
+  padding: 8px 12px;
+  text-decoration: none;
+  transition:
+    background-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.details-header__link:hover {
+  background: #e0e8f2;
+  box-shadow: 0 8px 16px rgba(23, 32, 51, 0.08);
+  transform: translateY(-1px);
+}
+
+.details-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-subtle);
+  display: grid;
+  gap: 28px;
+  padding: 30px;
+}
+
+.details-card__section {
+  border-bottom: 1px solid #e7ebf1;
+  padding-bottom: 24px;
+  position: relative;
+}
+
+.details-card__section:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.details-card h2 {
+  color: var(--color-text);
+  font-size: 1.2rem;
+  line-height: 1.3;
+  margin: 0 0 16px;
+}
+
+.details-card p {
+  color: var(--color-muted);
+  margin: 0;
+}
+
+.details-card p + p {
+  margin-top: 8px;
+}
+
+.details-list {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin: 0;
+}
+
+.details-list div {
+  background: #f8fbfa;
+  border: 1px solid #edf3f0;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px;
+}
+
+.details-list dt {
+  color: var(--color-muted);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.details-list dd {
+  color: var(--color-text);
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 640px) {
+  .details-header {
+    flex-direction: column;
+  }
+
+  .details-header__link {
+    text-align: center;
+    width: 100%;
+  }
+
+  .details-card {
+    padding: 20px;
+  }
+
+  .details-list {
+    grid-template-columns: 1fr;
+  }
+}

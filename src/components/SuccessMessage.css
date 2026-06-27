@@ -1,0 +1,9 @@
+.success-message {
+  background: var(--color-success-soft);
+  border: 1px solid #a8ddbd;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-subtle);
+  color: var(--color-success);
+  margin: 0 0 24px;
+  padding: 20px;
+}

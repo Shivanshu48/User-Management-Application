@@ -1,0 +1,72 @@
+:root {
+  color: #172033;
+  background: #f4f7f6;
+  --color-bg: #f4f7f6;
+  --color-surface: #ffffff;
+  --color-text: #172033;
+  --color-muted: #607067;
+  --color-border: #d8e2dc;
+  --color-border-strong: #adc2b8;
+  --color-primary: #0f3d3e;
+  --color-primary-hover: #145456;
+  --color-accent: #0f766e;
+  --color-accent-soft: #e9f6f2;
+  --color-warm: #f2b84b;
+  --color-warm-soft: #fff7e8;
+  --color-danger: #9f1c1c;
+  --color-danger-soft: #fff5f5;
+  --color-success: #1b6b43;
+  --color-success-soft: #eefaf2;
+  --radius-card: 18px;
+  --radius-control: 10px;
+  --shadow-soft: 0 18px 45px rgba(15, 61, 62, 0.14);
+  --shadow-subtle: 0 10px 28px rgba(15, 61, 62, 0.08);
+  font-family:
+    "Avenir Next", Avenir, "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+  font-synthesis: none;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background:
+    linear-gradient(135deg, rgba(15, 118, 110, 0.09), transparent 26rem),
+    radial-gradient(circle at top right, rgba(242, 184, 75, 0.16), transparent 28rem),
+    var(--color-bg);
+  margin: 0;
+  min-width: 320px;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.page-shell {
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 44px 32px;
+}
+
+.page h1 {
+  color: var(--color-text);
+  font-size: clamp(1.75rem, 2vw, 2.125rem);
+  line-height: 1.2;
+  margin: 0 0 28px;
+}
+
+@media (max-width: 640px) {
+  .page-shell {
+    padding: 28px 16px;
+  }
+}

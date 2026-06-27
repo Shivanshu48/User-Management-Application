@@ -1,0 +1,20 @@
+.error-message {
+  background: var(--color-danger-soft);
+  border: 1px solid #f4b8b8;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-subtle);
+  color: var(--color-danger);
+  display: grid;
+  gap: 6px;
+  margin: 0 0 20px;
+  padding: 18px 20px;
+}
+
+.error-message strong {
+  color: #7f1717;
+  font-size: 1rem;
+}
+
+.error-message p {
+  margin: 0;
+}
